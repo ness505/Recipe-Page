@@ -1,5 +1,4 @@
 /* External fonts */
-/* External Fonts */
 @font-face {
     font-family: 'Young Serif';
     src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
@@ -61,7 +60,6 @@
 
 body{
    background-color: hsl(30, 54%, 90%);
-   /* Display */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -91,6 +89,9 @@ body{
     color: black;
 }
 
+/*Content */
+
+/* General list styles */
 ul, ol{
   padding-left: 20px;
 }
@@ -99,59 +100,72 @@ ul li, ol li{
   padding-left: 1.5em;
 }
 
+/* Brown Subtitles */
 h2{
   font-family: 'Young Serif';
   font-weight: 500;
   font-size: 28px;
   color: hsl(14, 45%, 36%);
 }
-.Ingredients li::marker{
-  font-size: 12px; 
-  color:hsl(14, 45%, 36%) ;
-}
+
+/* Preparation time Box */
 .PurpleBox{
   background-color: hsl(330, 100%, 98%);
   padding: 25px;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  h3{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 0px;
+    color: hsl(332, 51%, 32%);
+  }
+
+  ul li::marker{
+    color:hsl(332, 51%, 32%);
+    font-size: 12px;
+  }
 }
 
-.PurpleBox h3{
-  font-family: 'Outfit';
-  font-weight: 600;
-  font-size: 18px;
-  margin-top: 0px;
-  color: hsl(332, 51%, 32%);
-}
-.PurpleBox ul li::marker{
-  color:hsl(332, 51%, 32%);
-  font-size: 12px;
+/* Ingredients Section */
+
+.Ingredients li::marker{
+  font-size: 12px; 
+  color:hsl(14, 45%, 36%) ;
 }
 
+/* Instructions Section */
 .Instructions li::marker{
   font-weight: 600;
   color:hsl(14, 45%, 36%);
 }
 
+/* Nutrition section */
+
 table{
   width: 100%;
   border-collapse: collapse;
-}
-table td{
-  padding: 10px;
-  width: 50%;
-  border-bottom: 1px solid hsl(30, 12%, 68%);
-}
-table td:first-child{
-  padding-left: 25px;
-}
-table td:last-child{
-  font-weight: 600;
-  color: hsl(14, 45%, 36%);
-}
-table tr:last-child td{
-  border: none;
+
+  td{
+    padding: 10px;
+    width: 50%;
+    border-bottom: 1px solid hsl(30, 12%, 68%);
+  }
+  td:first-child{ /* left column */
+    padding-left: 25px;
+  }
+
+  td:last-child{  /* right column */
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+  }
+
+  tr:last-child td{ /* Deleting the last border*/
+    border: none;
+  }
 }
 
 
@@ -165,17 +179,17 @@ table tr:last-child td{
     width: 100%;
     margin: 0; 
     border: none; 
-    padding-top: 0; /* Mantén el padding superior si lo necesitas */
-    padding-left: 35px; /* Mantén el padding izquierdo */
-    padding-right: 35px; /* Mantén el padding derecho */
+    padding-top: 0; 
+    padding-left: 35px; 
+    padding-right: 35px; 
     box-sizing: border-box;
     border-radius: 0px;
 }
 
 .Recipe img {
-    width: calc(100% + 70px); /* Aumenta el ancho para compensar el padding */
-    margin-left: -35px; /* Aplica un margen negativo a la izquierda */
-    margin-right: -35px; /* Aplica un margen negativo a la derecha */
+    width: calc(100% + 70px); 
+    margin-left: -35px;
+    margin-right: -35px;
     border-radius: 0;
     padding: 0;
 }
