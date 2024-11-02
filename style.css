@@ -1,0 +1,165 @@
+/* External fonts */
+/* External Fonts */
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+
+body{
+   background-color: hsl(30, 54%, 90%);
+
+   /* Display */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: auto;
+}
+
+.Recipe{
+  margin-top: 120px;
+    width: 650px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 40px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+.Recipe img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Recipe h1{
+    font-family: 'Young Serif';
+    font-weight: 500;
+    font-size: 40px;
+    color: black;
+}
+
+ul, ol{
+  padding-left: 20px;
+}
+ul li, ol li{
+  line-height: 1.8em;
+  padding-left: 1.5em;
+}
+
+h2{
+  font-family: 'Young Serif';
+  font-weight: 500;
+  font-size: 28px;
+  color: hsl(14, 45%, 36%);
+}
+.Ingredients li::marker{
+  font-size: 12px; 
+  color:hsl(14, 45%, 36%) ;
+}
+.PurpleBox{
+  background-color: hsl(330, 100%, 98%);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.PurpleBox h3{
+  font-family: 'Outfit';
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0px;
+  color: hsl(332, 51%, 32%);
+}
+.PurpleBox ul li::marker{
+  color:hsl(332, 51%, 32%);
+  font-size: 12px;
+}
+
+.Instructions li::marker{
+  font-weight: 600;
+  color:hsl(14, 45%, 36%);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table td{
+  padding: 10px;
+  width: 50%;
+  border-bottom: 1px solid hsl(30, 12%, 68%);
+}
+table td:first-child{
+  padding-left: 25px;
+}
+table td:last-child{
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+table tr:last-child td{
+  border: none;
+}
+
+
+/*  Mobile Design styles */
+@media (max-width: 700px) {
+
+    .Recipe{
+        width: 375px;
+        height: 100vh;
+    }
+  }
