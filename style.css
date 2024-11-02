@@ -61,24 +61,24 @@
 
 body{
    background-color: hsl(30, 54%, 90%);
-
    /* Display */
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    height: auto;
+   margin: 0;
 }
 
 .Recipe{
   margin-top: 120px;
-    width: 650px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-    padding: 40px;
-    font-family: 'Outfit';
-    font-size: 16px;
-    color: hsl(30, 10%, 34%);
+  width: 650px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 40px;
+  font-family: 'Outfit';
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
 }
 .Recipe img{
     width: 100%;
@@ -158,8 +158,25 @@ table tr:last-child td{
 /*  Mobile Design styles */
 @media (max-width: 700px) {
 
-    .Recipe{
-        width: 375px;
-        height: 100vh;
-    }
+  body{
+    background-color: white;
   }
+  .Recipe {
+    width: 100%;
+    margin: 0; 
+    border: none; 
+    padding-top: 0; /* Mantén el padding superior si lo necesitas */
+    padding-left: 35px; /* Mantén el padding izquierdo */
+    padding-right: 35px; /* Mantén el padding derecho */
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.Recipe img {
+    width: calc(100% + 70px); /* Aumenta el ancho para compensar el padding */
+    margin-left: -35px; /* Aplica un margen negativo a la izquierda */
+    margin-right: -35px; /* Aplica un margen negativo a la derecha */
+    border-radius: 0;
+    padding: 0;
+}
+}
