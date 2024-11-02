@@ -16,7 +16,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 #### My Desktopk design result
-![Desktopk Design Result](Desktop_Result.png.jpg)
+![Desktopk Design Result](Desktop_Result.png)
 #### My Mobile Design Result
 ![Mobile Design Result](Mobile_Result.png)
 
